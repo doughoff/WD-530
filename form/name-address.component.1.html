@@ -1,0 +1,80 @@
+<form>
+    <div>
+        <b>Preview for model data</b>: <br>
+        <b>Preview for form data</b>: <br>
+    </div>
+
+    <h3>1 Scrape and send data</h3>
+    <button class='tiny button'>Show form</button>
+    <fieldset class="fieldset">
+        <legend>Name and address form
+            <span class='label secondary'>Unchanged</span>
+            <span class='label warning'>In progress</span>
+            <span class='label success'>Ready to submit</span>
+        </legend>
+
+        <div name="name" class="row">
+            <div class="large-4 columns">
+                <label for="first">First Name: 
+            <span class ='label alert' >err</span>
+        </label>
+                <input id='first' type="text" #nameFirst>
+
+            </div>
+            <div class="large-4 columns">
+                <label for="last">Last Name: 
+            <span class ='label alert' >err</span>
+        </label>
+                <input id='last' type="text" #nameLast>
+            </div>
+        </div>
+
+        <div>
+            <div name="street" class="row">
+                <div class="large-8 columns">
+                    <label for="street">Street:
+                <span class ='label alert' >err</span>
+            </label>
+                    <input id='street' type="text">
+                </div>
+            </div>
+
+            <div name="city-state-zip" class="row">
+                <div class="large-4 columns">
+                    <label for="city">City:
+                <span class ='label alert'>err</span>
+            </label>
+                    <input id='city' type="text">
+                </div>
+                <div class="large-1 columns">
+                    <label for="state">St:<span 
+                class ='label alert' >err</span>
+            </label>
+                    <input id='state' type="text">
+                </div>
+                <div class="large-3 columns">
+                    <label for="zip">Zip:
+                <span class ='label alert' >err</span>
+            </label>
+                    <input id='zip' type="text">
+                </div>
+            </div>
+        </div>
+
+    </fieldset>
+    <button type="submit" class="button" (click)=" 
+        data = {
+            nameFirst: nameFirst.value, 
+            nameLast: nameLast.value,
+            nameFirstId: nameFirst.id,
+            nameFirstType: nameFirst.type,
+            nameFirstOffsetHeight: nameFirst.offsetHeight,
+            nameFirstParentNode: nameFirst.parentNode.nodeName
+        };
+        submittingForm1(data); 
+        showEachPropertyOf(data);
+        showStringified(data);
+        nameFirst.value = '';
+        nameFirst.focus();        
+        ">Send data</button>
+</form>

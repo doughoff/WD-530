@@ -1,0 +1,13 @@
+<div class="success callout small-4">
+
+<img src="{{dog.imageUrl}}" title="{{dog.name}}" alt="{{dog.name}}" class='float-left c-imagePlacement1'>
+
+<h3>{{dog.name}}</h3>
+<p>
+{{dog.age}} year old {{dog.gender}} {{dog.breed || 'unknown breed'}}
+   <br/> 
+	last in the office 
+	{{dog.lastOfficeVisit?.toDateString() || 'never'}}
+</p>
+
+</div>

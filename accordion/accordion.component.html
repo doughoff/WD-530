@@ -1,0 +1,19 @@
+<h1>Accordion</h1>
+<button class="tiny button" (click)='reverseSections()'>
+    Click to reverse
+</button>
+<button class="tiny button" (dblclick)='deleteLastSection()'>
+    Double-click to delete last section
+</button>
+<button class="tiny button" style='box-shadow: 0px 0px 30px hsl(200, 100%, 50%);' (mouseover)='shuffleSections()'> Hover to scramble
+</button>
+
+<section *ngFor="let section of sections; let i=index" (contextmenu)='showEventInConsole($event)'>
+    <h2>
+        <a (click)='accordionClick($event)' id='{{i}}'><i class="fa fa-music 
+        {{section.isHidden ?  '' : 'fa-rotate-270' }}"></i> {{section.label}}</a>
+    </h2>
+    <p [ngClass]="{hide: sections[i].isHidden}">
+        {{section.content}}
+    </p>
+</section>

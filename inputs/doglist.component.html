@@ -1,0 +1,10 @@
+<h6>Start child 2 template</h6>
+<div>
+    <b>Dog Listing:</b>
+    <span *ngFor="let aDog of dogsFromParent">
+    <span class='label'><i class='fa fa-paw fa-3x float-left'></i>
+    <dog-name [dogNameIn]='aDog'></dog-name>
+    </span>
+    </span>
+</div>
+<h6>End child 2 template</h6>

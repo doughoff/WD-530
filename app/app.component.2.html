@@ -1,0 +1,13 @@
+<div class="callout" 
+[style.border] = "needsBorder ? '5px solid lightblue' : 'none'"
+ [ngClass]="{
+ success: isSuccess, 
+ warning: !isSuccess, 
+ hide: isHidden, 
+'small-4': isFourColumns }"
+>
+    <figure>
+        <img [src]='src' [alt]='alt' [title]='alt' #dogs>
+        <figcaption>{{'Caption: ' + dogs.alt}}</figcaption>
+    </figure>
+</div>

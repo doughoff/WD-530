@@ -1,0 +1,13 @@
+<div class='row'>
+    <input type="text" [formControl]="term" placeholder='Type your query' autofocus />
+</div>
+
+<div class='row' *ngFor="let item of items | async; let i = index" >
+    <div class="small-3  columns">
+            <span class="badge">{{i+1}}</span>
+            <a href='{{item.link}}'>{{item.term}}</a>
+    </div>
+    <div class="small-9 columns">
+        <td style='font-size: .8rem'>{{item.description}}</td>
+    </div>
+</div>

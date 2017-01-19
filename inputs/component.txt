@@ -1,0 +1,20 @@
+
+import {Component, Input}       from 'angular2/core';
+import {Dog}            from 'model/dog.ts';
+import {MockDogs}       from 'model/dog-data.ts';
+//----------------------------------------------  optional child component
+@Component({
+    selector: 'dog-name',
+    inputs: ['dogIn'],
+    styles: [
+        '#nameContainer {margin:.4rem; display: inline-block; text-align: right; }',
+        '#breed {font-size: .7rem; }'
+    ],
+    template: `
+    <div id='nameContainer'>
+        <div id='name'>{{dogIn.name | uppercase }}</div>
+        <div id='breed'>{{dogIn.breed}}</div>
+    </div>
+`
+})
+export class DogName { }

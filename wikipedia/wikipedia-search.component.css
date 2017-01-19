@@ -1,0 +1,6 @@
+.row 
+{     
+      padding-bottom: .3em;
+      padding-top: .3em;
+      border-bottom: 1px solid hsl(200,80%,90%); 
+}

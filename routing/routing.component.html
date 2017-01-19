@@ -1,0 +1,23 @@
+<h1>Routing</h1>
+<nav>
+    <ul class='vertical medium-horizontal menu'>
+        <li>
+            <a [routerLink]="['aPath']">A Home for Us</a>
+        </li>
+        <li>
+            <a [routerLink]="['bPath']">Blog</a>
+        </li>
+        <li>
+            <a [routerLink]="['cPath']">Contact Us</a>
+        </li>
+        <li>
+            <a [routerLink]="['dPath']">Don't know</a>
+        </li>
+         <li>
+            <a [routerLink]="['eeeePath']">Not a valid link</a>
+        </li>       
+    </ul>
+</nav>
+<div class='callout'>
+    <router-outlet></router-outlet>
+</div>

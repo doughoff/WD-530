@@ -1,0 +1,17 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.DS_Store": true,
+        "**/*.js.map": true,
+        "**/*.js": {
+            "when": "$(basename).ts"
+        },
+        "dist": true,
+        "node_modules": true,
+        "tmp": true,
+        "typings": true
+    }
+,
+"typescript.check.workspaceVersion": false
+}
