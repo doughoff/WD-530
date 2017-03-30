@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var forms_1 = require("@angular/forms");
+var core_1 = require('@angular/core');
+var forms_1 = require('@angular/forms');
 var ValidateCity = (function () {
     function ValidateCity(_city, _state) {
         this.city = _city;
@@ -73,20 +73,20 @@ exports.Utilities = Utilities;
 var GrumpyCityValidator = (function () {
     function GrumpyCityValidator() {
     }
+    GrumpyCityValidator = __decorate([
+        core_1.Directive({
+            selector: '[grumpy-city]',
+            providers: [
+                {
+                    provide: forms_1.NG_VALIDATORS,
+                    useValue: ValidateCity.notWichita_notStartWithK_min3,
+                    multi: true
+                }]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], GrumpyCityValidator);
     return GrumpyCityValidator;
 }());
-GrumpyCityValidator = __decorate([
-    core_1.Directive({
-        selector: '[grumpy-city]',
-        providers: [
-            {
-                provide: forms_1.NG_VALIDATORS,
-                useValue: ValidateCity.notWichita_notStartWithK_min3,
-                multi: true
-            }
-        ]
-    })
-], GrumpyCityValidator);
 exports.GrumpyCityValidator = GrumpyCityValidator;
 var CityStartsWithValidator = (function () {
     function CityStartsWithValidator(aLetter) {
@@ -95,20 +95,19 @@ var CityStartsWithValidator = (function () {
     CityStartsWithValidator.prototype.validate = function (c) {
         return this.validator(c);
     };
+    CityStartsWithValidator = __decorate([
+        core_1.Directive({
+            selector: '[city-starts-with]',
+            providers: [
+                {
+                    provide: forms_1.NG_VALIDATORS,
+                    useValue: ValidateCity.startsWith,
+                    multi: true
+                }]
+        }), 
+        __metadata('design:paramtypes', [String])
+    ], CityStartsWithValidator);
     return CityStartsWithValidator;
 }());
-CityStartsWithValidator = __decorate([
-    core_1.Directive({
-        selector: '[city-starts-with]',
-        providers: [
-            {
-                provide: forms_1.NG_VALIDATORS,
-                useValue: ValidateCity.startsWith,
-                multi: true
-            }
-        ]
-    }),
-    __metadata("design:paramtypes", [String])
-], CityStartsWithValidator);
 exports.CityStartsWithValidator = CityStartsWithValidator;
 //# sourceMappingURL=form.validator.js.map

@@ -8,10 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var accordionData_1 = require("./model/accordionData");
-var accordionSection_1 = require("./model/accordionSection");
-var Accordion = Accordion_1 = (function () {
+var core_1 = require('@angular/core');
+var accordionData_1 = require('./model/accordionData');
+var accordionSection_1 = require('./model/accordionSection');
+var Accordion = (function () {
     function Accordion() {
         var _this = this;
         this.sections = [];
@@ -48,22 +48,21 @@ var Accordion = Accordion_1 = (function () {
         return array;
     };
     Accordion.prototype.shuffleSections = function () {
-        Accordion_1.shuffleArray(this.sections);
+        Accordion.shuffleArray(this.sections);
     };
     Accordion.prototype.deleteLastSection = function () {
         this.sections.pop();
     };
+    Accordion = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'app-root',
+            styleUrls: ['accordion.component.css'],
+            templateUrl: 'accordion.component.html'
+        }), 
+        __metadata('design:paramtypes', [])
+    ], Accordion);
     return Accordion;
 }());
-Accordion = Accordion_1 = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'app-root',
-        styleUrls: ['accordion.component.css'],
-        templateUrl: 'accordion.component.html'
-    }),
-    __metadata("design:paramtypes", [])
-], Accordion);
 exports.Accordion = Accordion;
-var Accordion_1;
 //# sourceMappingURL=accordion.component.js.map

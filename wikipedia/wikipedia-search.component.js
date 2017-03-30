@@ -8,9 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var wikipedia_service_1 = require("./wikipedia.service");
-var forms_1 = require("@angular/forms");
+var core_1 = require('@angular/core');
+var wikipedia_service_1 = require('./wikipedia.service');
+var forms_1 = require('@angular/forms');
 var WikipediaSearch = (function () {
     function WikipediaSearch(wikipediaService) {
         this.wikipediaService = wikipediaService;
@@ -23,16 +23,16 @@ var WikipediaSearch = (function () {
             .distinctUntilChanged()
             .switchMap(function (term) { return _this.wikipediaService.search(term); });
     };
+    WikipediaSearch = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'wikipedia-search',
+            styleUrls: ['./wikipedia-search.component.css'],
+            templateUrl: './wikipedia-search.component.html'
+        }), 
+        __metadata('design:paramtypes', [wikipedia_service_1.WikipediaService])
+    ], WikipediaSearch);
     return WikipediaSearch;
 }());
-WikipediaSearch = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'wikipedia-search',
-        styleUrls: ['./wikipedia-search.component.css'],
-        templateUrl: './wikipedia-search.component.html'
-    }),
-    __metadata("design:paramtypes", [wikipedia_service_1.WikipediaService])
-], WikipediaSearch);
 exports.WikipediaSearch = WikipediaSearch;
 //# sourceMappingURL=wikipedia-search.component.js.map

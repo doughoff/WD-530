@@ -8,11 +8,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var forms_1 = require("@angular/forms");
-var formSchemas_1 = require("./model/formSchemas");
-var states_1 = require("./model/states");
-var form_validator_1 = require("./form.validator");
+var core_1 = require('@angular/core');
+var forms_1 = require('@angular/forms');
+var formSchemas_1 = require('./model/formSchemas');
+var states_1 = require('./model/states');
+var form_validator_1 = require('./form.validator');
 var NameAddressForm = (function () {
     function NameAddressForm(builder) {
         this.states = states_1.States.withAbbreviations;
@@ -136,17 +136,17 @@ var NameAddressForm = (function () {
             _this.updateValidState();
         });
     };
+    NameAddressForm = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'name-address-form',
+            styleUrls: ['name-address.component.css'],
+            templateUrl: 'name-address.component.4.html',
+            changeDetection: core_1.ChangeDetectionStrategy.OnPush
+        }), 
+        __metadata('design:paramtypes', [forms_1.FormBuilder])
+    ], NameAddressForm);
     return NameAddressForm;
 }());
-NameAddressForm = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'name-address-form',
-        styleUrls: ['name-address.component.css'],
-        templateUrl: 'name-address.component.4.html',
-        changeDetection: core_1.ChangeDetectionStrategy.OnPush
-    }),
-    __metadata("design:paramtypes", [forms_1.FormBuilder])
-], NameAddressForm);
 exports.NameAddressForm = NameAddressForm;
 //# sourceMappingURL=name-address.component.js.map

@@ -7,7 +7,7 @@
     // map tells the System loader where to look for things
     map: {
       // our app is within the basic folder
-      app: 'basic',
+      app: 'routing',
       // angular bundles
       '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
       '@angular/common': 'npm:@angular/common/bundles/common.umd.js',
