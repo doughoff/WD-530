@@ -8,23 +8,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 // import { NgModule, enableProdMode }  from '@angular/core';
 // enableProdMode();
-var platform_browser_1 = require('@angular/platform-browser');
-var children_component_1 = require('./children.component');
+var platform_browser_1 = require("@angular/platform-browser");
+var children_component_1 = require("./children.component");
 var AppModule = (function () {
     function AppModule() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [children_component_1.Children, children_component_1.OrganizingChild, children_component_1.IgnoringChild],
-            bootstrap: [children_component_1.Children]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppModule);
     return AppModule;
 }());
+AppModule = __decorate([
+    core_1.NgModule({
+        imports: [platform_browser_1.BrowserModule],
+        declarations: [children_component_1.Children, children_component_1.OrganizingChild, children_component_1.IgnoringChild],
+        bootstrap: [children_component_1.Children]
+    }),
+    __metadata("design:paramtypes", [])
+], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map

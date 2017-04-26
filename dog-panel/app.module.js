@@ -8,24 +8,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var dog_panel_component_1 = require('./dog-panel.component');
-var curlyquotes_pipe_1 = require('./curlyquotes.pipe');
-var dog_detail_component_1 = require('./dog-detail.component');
+var core_1 = require("@angular/core");
+var platform_browser_1 = require("@angular/platform-browser");
+var dog_panel_component_1 = require("./dog-panel.component");
+var curlyquotes_pipe_1 = require("./curlyquotes.pipe");
+var dog_detail_component_1 = require("./dog-detail.component");
 var AppModule = (function () {
     function AppModule() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule
-            ],
-            declarations: [dog_panel_component_1.DogPanel, curlyquotes_pipe_1.CurlyQuotesPipe, dog_detail_component_1.DogDetail],
-            bootstrap: [dog_panel_component_1.DogPanel]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppModule);
     return AppModule;
 }());
+AppModule = __decorate([
+    core_1.NgModule({
+        imports: [platform_browser_1.BrowserModule
+        ],
+        declarations: [dog_panel_component_1.DogPanel, curlyquotes_pipe_1.CurlyQuotesPipe, dog_detail_component_1.DogDetail],
+        bootstrap: [dog_panel_component_1.DogPanel]
+    }),
+    __metadata("design:paramtypes", [])
+], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map

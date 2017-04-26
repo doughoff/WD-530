@@ -8,20 +8,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var BasicComponent = (function () {
     function BasicComponent() {
     }
-    BasicComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'app-root',
-            styleUrls: ['basic.component.css'],
-            templateUrl: "basic.component.html"
-        }), 
-        __metadata('design:paramtypes', [])
-    ], BasicComponent);
     return BasicComponent;
 }());
+BasicComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'app-root',
+        styleUrls: ['basic.component.css'],
+        templateUrl: "basic.component.html"
+    }),
+    __metadata("design:paramtypes", [])
+], BasicComponent);
 exports.BasicComponent = BasicComponent;
 //# sourceMappingURL=basic.component.js.map

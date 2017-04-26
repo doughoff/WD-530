@@ -8,21 +8,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var common_1 = require('@angular/common');
-var feature_component_1 = require('./feature.component');
+var core_1 = require("@angular/core");
+var common_1 = require("@angular/common");
+var feature_component_1 = require("./feature.component");
 var FeatureModule = (function () {
     function FeatureModule() {
     }
-    FeatureModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule],
-            declarations: [feature_component_1.FeatureComponent],
-            exports: [feature_component_1.FeatureComponent]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], FeatureModule);
     return FeatureModule;
 }());
+FeatureModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule],
+        declarations: [feature_component_1.FeatureComponent],
+        exports: [feature_component_1.FeatureComponent]
+    }),
+    __metadata("design:paramtypes", [])
+], FeatureModule);
 exports.FeatureModule = FeatureModule;
 //# sourceMappingURL=feature.module.js.map

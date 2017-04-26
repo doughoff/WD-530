@@ -8,51 +8,51 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 //-------------------------------------------  optional child component
 var IgnoringChild = (function () {
     function IgnoringChild() {
     }
-    IgnoringChild = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'ignored-stuff',
-            templateUrl: 'ignoring-child.html'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], IgnoringChild);
     return IgnoringChild;
 }());
+IgnoringChild = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'ignored-stuff',
+        templateUrl: 'ignoring-child.html'
+    }),
+    __metadata("design:paramtypes", [])
+], IgnoringChild);
 exports.IgnoringChild = IgnoringChild;
 //-------------------------------------------  optional child component
 var OrganizingChild = (function () {
     function OrganizingChild() {
     }
-    OrganizingChild = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'unorganized-stuff',
-            templateUrl: 'organizing-child.html'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], OrganizingChild);
     return OrganizingChild;
 }());
+OrganizingChild = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'unorganized-stuff',
+        templateUrl: 'organizing-child.html'
+    }),
+    __metadata("design:paramtypes", [])
+], OrganizingChild);
 exports.OrganizingChild = OrganizingChild;
 //-----------------------------------------------  root (app) component
 var Children = (function () {
     function Children() {
     }
-    Children = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'app-root',
-            styleUrls: ['children.component.css'],
-            templateUrl: "children.component.html"
-        }), 
-        __metadata('design:paramtypes', [])
-    ], Children);
     return Children;
 }());
+Children = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'app-root',
+        styleUrls: ['children.component.css'],
+        templateUrl: "children.component.html"
+    }),
+    __metadata("design:paramtypes", [])
+], Children);
 exports.Children = Children;
 //# sourceMappingURL=children.component.js.map

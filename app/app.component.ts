@@ -14,7 +14,7 @@ export class AppComponent {
   private isFourColumns: boolean;
 
   constructor() {
-    this._src = 'http://animalshavefun.com/wp-content/uploads/videogallery/166_thumb1562274571.jpg';
+    this._src = 'http://www.funny-animalpictures.com/media/content/items/images/funnydogs0007_O.jpg';
     this._alt = 'funny dogs';
     this.needsBorder = true;
     this.isSuccess = false;

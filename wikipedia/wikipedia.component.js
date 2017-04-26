@@ -8,20 +8,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var Wikipedia = (function () {
     function Wikipedia() {
     }
-    Wikipedia = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'app-root',
-            styleUrls: ['wikipedia.component.css'],
-            templateUrl: 'wikipedia.component.html'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], Wikipedia);
     return Wikipedia;
 }());
+Wikipedia = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'app-root',
+        styleUrls: ['wikipedia.component.css'],
+        templateUrl: 'wikipedia.component.html'
+    }),
+    __metadata("design:paramtypes", [])
+], Wikipedia);
 exports.Wikipedia = Wikipedia;
 //# sourceMappingURL=wikipedia.component.js.map

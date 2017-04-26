@@ -8,26 +8,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var http_1 = require('@angular/http');
-var forms_1 = require('@angular/forms');
-var wikipedia_component_1 = require('./wikipedia.component');
-var wikipedia_search_component_1 = require('./wikipedia-search.component');
-var wikipedia_service_1 = require('./wikipedia.service');
+var core_1 = require("@angular/core");
+var platform_browser_1 = require("@angular/platform-browser");
+var http_1 = require("@angular/http");
+var forms_1 = require("@angular/forms");
+var wikipedia_component_1 = require("./wikipedia.component");
+var wikipedia_search_component_1 = require("./wikipedia-search.component");
+var wikipedia_service_1 = require("./wikipedia.service");
 var AppModule = (function () {
     function AppModule() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, http_1.JsonpModule, forms_1.ReactiveFormsModule],
-            declarations: [wikipedia_component_1.Wikipedia, wikipedia_search_component_1.WikipediaSearch],
-            providers: [wikipedia_service_1.WikipediaService],
-            bootstrap: [wikipedia_component_1.Wikipedia]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppModule);
     return AppModule;
 }());
+AppModule = __decorate([
+    core_1.NgModule({
+        imports: [platform_browser_1.BrowserModule, http_1.JsonpModule, forms_1.ReactiveFormsModule],
+        declarations: [wikipedia_component_1.Wikipedia, wikipedia_search_component_1.WikipediaSearch],
+        providers: [wikipedia_service_1.WikipediaService],
+        bootstrap: [wikipedia_component_1.Wikipedia]
+    }),
+    __metadata("design:paramtypes", [])
+], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map

@@ -8,15 +8,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 //--------------------------------------  reference data class
 var Zurb = (function () {
     function Zurb() {
     }
-    Zurb.validStylesForCallouts = ['', 'primary', 'secondary', 'success', 'warning', 'alert'];
-    Zurb.validSizesForCallouts = ['', 'small', 'large'];
     return Zurb;
 }());
+Zurb.validStylesForCallouts = ['', 'primary', 'secondary', 'success', 'warning', 'alert'];
+Zurb.validSizesForCallouts = ['', 'small', 'large'];
 exports.Zurb = Zurb;
 //--------------------------------------  child component
 var ChildComponent = (function () {
@@ -58,16 +58,16 @@ var ChildComponent = (function () {
             Zurb.validSizesForCallouts[Math.floor(Math.random() *
                 Zurb.validSizesForCallouts.length)];
     };
-    ChildComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'child',
-            templateUrl: "child.component.html"
-        }), 
-        __metadata('design:paramtypes', [])
-    ], ChildComponent);
     return ChildComponent;
 }());
+ChildComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'child',
+        templateUrl: "child.component.html"
+    }),
+    __metadata("design:paramtypes", [])
+], ChildComponent);
 exports.ChildComponent = ChildComponent;
 var ParentChildComponent = (function () {
     function ParentChildComponent() {
@@ -81,20 +81,20 @@ var ParentChildComponent = (function () {
         var calloutChildren = this.viewChildren;
         calloutChildren.forEach(function (callout) { callout.changeSize(); });
     };
-    __decorate([
-        core_1.ViewChildren(ChildComponent), 
-        __metadata('design:type', core_1.QueryList)
-    ], ParentChildComponent.prototype, "viewChildren", void 0);
-    ParentChildComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'app-root',
-            styleUrls: ["parent-child.component.css"],
-            templateUrl: "parent-child.component.html"
-        }), 
-        __metadata('design:paramtypes', [])
-    ], ParentChildComponent);
     return ParentChildComponent;
 }());
+__decorate([
+    core_1.ViewChildren(ChildComponent),
+    __metadata("design:type", core_1.QueryList)
+], ParentChildComponent.prototype, "viewChildren", void 0);
+ParentChildComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'app-root',
+        styleUrls: ["parent-child.component.css"],
+        templateUrl: "parent-child.component.html"
+    }),
+    __metadata("design:paramtypes", [])
+], ParentChildComponent);
 exports.ParentChildComponent = ParentChildComponent;
 //# sourceMappingURL=parent-child.component.js.map

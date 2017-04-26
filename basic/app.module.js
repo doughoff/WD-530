@@ -8,23 +8,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 // import { NgModule, enableProdMode }  from '@angular/core';
 // enableProdMode();
-var platform_browser_1 = require('@angular/platform-browser');
-var basic_component_1 = require('./basic.component');
+var platform_browser_1 = require("@angular/platform-browser");
+var basic_component_1 = require("./basic.component");
 var AppModule = (function () {
     function AppModule() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [basic_component_1.BasicComponent],
-            bootstrap: [basic_component_1.BasicComponent]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppModule);
     return AppModule;
 }());
+AppModule = __decorate([
+    core_1.NgModule({
+        imports: [platform_browser_1.BrowserModule],
+        declarations: [basic_component_1.BasicComponent],
+        bootstrap: [basic_component_1.BasicComponent]
+    }),
+    __metadata("design:paramtypes", [])
+], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map
