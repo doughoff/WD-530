@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var dog_1 = require("./model/dog");
 var DogDetail = (function () {
@@ -51,8 +52,7 @@ DogDetail = __decorate([
             '.c-imagePlacement2 {margin:.5em .5em 1.5em 0; max-height:2.5em}',
             '.tiny.button { margin:0; padding: .6em 1em;}'
         ]
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], DogDetail);
 exports.DogDetail = DogDetail;
 //# sourceMappingURL=dog-detail.component.js.map

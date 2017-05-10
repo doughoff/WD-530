@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 //--------------------------------------  reference data class
 var Zurb = (function () {
@@ -93,8 +94,7 @@ ParentChildComponent = __decorate([
         selector: 'app-root',
         styleUrls: ["parent-child.component.css"],
         templateUrl: "parent-child.component.html"
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], ParentChildComponent);
 exports.ParentChildComponent = ParentChildComponent;
 //# sourceMappingURL=parent-child.component.js.map

@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var AccordionSection = (function () {
     function AccordionSection(labelIn, contentIn) {
         this._label = labelIn || 'no label';

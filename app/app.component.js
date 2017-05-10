@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
@@ -34,7 +35,7 @@ AppComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: 'app-root, .app-root, [app-root]',
-        templateUrl: 'app.component.1.html',
+        templateUrl: 'app.component.html',
         styleUrls: ['app.component.css']
     }),
     __metadata("design:paramtypes", [])

@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var dog_data_1 = require("./model/dog-data");
 //----------------------------------------------  optional child component
@@ -29,8 +30,7 @@ DogName = __decorate([
             '.dog-breed {font-size: .7rem; }'
         ],
         template: "\n    <div class='dog-nameContainer'>\n        <div class='dog-name'>{{dogNameIn.name | uppercase }}</div>\n        <div class='dog-breed'>{{dogNameIn.breed}}</div>\n    </div>\n"
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], DogName);
 exports.DogName = DogName;
 //----------------------------------------------  optional child component
@@ -48,8 +48,7 @@ DogList = __decorate([
         moduleId: module.id,
         selector: 'dog-list',
         templateUrl: 'doglist.component.html'
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], DogList);
 exports.DogList = DogList;
 //----------------------------------------------  optional child component
@@ -75,8 +74,7 @@ InputChild = __decorate([
         moduleId: module.id,
         selector: 'input-child',
         templateUrl: 'inputchild.component.html'
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], InputChild);
 exports.InputChild = InputChild;
 //----------------------------------------------  root component
@@ -93,8 +91,7 @@ Inputs = __decorate([
         selector: 'app-root',
         templateUrl: 'inputs.component.html',
         styleUrls: ['inputs.component.css']
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], Inputs);
 exports.Inputs = Inputs;
 //# sourceMappingURL=inputs.component.js.map

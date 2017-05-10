@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var dog_1 = require("./dog");
 var MockDogs = (function () {
     function MockDogs() {
