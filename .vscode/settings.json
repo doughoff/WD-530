@@ -12,7 +12,4 @@
         "tmp": true,
         "typings": true
     }
-,
-"typescript.check.workspaceVersion": false,
-"vsicons.presets.angular": true
 }
