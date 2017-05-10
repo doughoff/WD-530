@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 @Component({
     moduleId: module.id,
     selector: 'app-root',
-    styleUrls: ['basic.component.css'],
-    templateUrl : `basic.component.html` 
+    templateUrl : `basic.component.html`,
+    styleUrls: ['basic.component.css']
 })
 export class BasicComponent { }
