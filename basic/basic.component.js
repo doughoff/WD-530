@@ -16,8 +16,8 @@ BasicComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: 'app-root',
-        styleUrls: ['basic.component.css'],
-        templateUrl: "basic.component.html"
+        templateUrl: "basic.component.html",
+        styleUrls: ['basic.component.css']
     })
 ], BasicComponent);
 exports.BasicComponent = BasicComponent;
