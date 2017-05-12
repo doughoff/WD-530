@@ -144,7 +144,7 @@ NameAddressForm = __decorate([
         moduleId: module.id,
         selector: 'name-address-form',
         styleUrls: ['name-address.component.css'],
-        templateUrl: 'name-address.component.4.html',
+        templateUrl: 'name-address.component.0.html',
         changeDetection: core_1.ChangeDetectionStrategy.OnPush
     }),
     __metadata("design:paramtypes", [forms_1.FormBuilder])

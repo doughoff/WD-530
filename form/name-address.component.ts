@@ -1,18 +1,18 @@
 import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, FormControl, Validators} from '@angular/forms';
-import {Name, Address} from './model/formSchemas';
-import {States} from './model/states';
-import {ValidateCity, Utilities} from './form.validator';
+import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
+import { Name, Address } from './model/formSchemas';
+import { States } from './model/states';
+import { ValidateCity, Utilities } from './form.validator';
 
 @Component({
     moduleId: module.id,
     selector: 'name-address-form',
     styleUrls: ['name-address.component.css'],
-    templateUrl: 'name-address.component.4.html',
+    templateUrl: 'name-address.component.0.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NameAddressForm implements OnInit {
-    private submittedDataText : string;
+    private submittedDataText: string;
     private _name: Name;
     private _address: Address;
     private nameAddressFormGroup: FormGroup;
@@ -20,7 +20,7 @@ export class NameAddressForm implements OnInit {
     private errorMessages: any;
     private whenValidStateFor: any;
     private states = States.withAbbreviations;
-    
+
     constructor(builder: FormBuilder) {
         this.builder = builder;
         this._name = new Name();
@@ -42,27 +42,28 @@ export class NameAddressForm implements OnInit {
         this._address = arg;
     }
 
-    submittingForm1(data : any): void {
+    submittingForm1(data: any): void {
         console.log('Data 1 was submitted.');
         this.submittedDataText = data.nameFirst + ' ' + data.nameLast;
     }
+
     showEachPropertyOf(data: any): void {
         for (var eachKey in data) {
             console.info(eachKey, '=', data[eachKey]);
         }
     }
-    showStringified(data :any): void {
+    showStringified(data: any): void {
         console.info('Stringified data:', JSON.stringify(data, null, 2));
     }
-    submittingForm2(data : any): void {
+    submittingForm2(data: any): void {
         console.info('Form 2 was submitted.');
         console.log('Submitted data', data);
         console.info('Model is now: ', this.name, this.address);
         // this.name.reset();
         // this.address.reset();
-        data.forEach((field:any) => { field.value = ''; })
+        data.forEach((field: any) => { field.value = ''; })
     }
-    private submittingForm3(formData : any) {
+    private submittingForm3(formData: any) {
         console.info('Form 3 was submitted.');
         console.info('Model is now: ', this.name, this.address);
         console.info('ngControl form data:', JSON.stringify(formData.value));
