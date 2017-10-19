@@ -7,18 +7,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var Form = (function () {
+var Form = /** @class */ (function () {
     function Form() {
     }
+    Form = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'app-root',
+            styleUrls: ['form.component.css'],
+            templateUrl: "form.component.html"
+        })
+    ], Form);
     return Form;
 }());
-Form = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'app-root',
-        styleUrls: ['form.component.css'],
-        templateUrl: "form.component.html"
-    })
-], Form);
 exports.Form = Form;
 //# sourceMappingURL=form.component.js.map

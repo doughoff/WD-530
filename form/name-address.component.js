@@ -14,7 +14,7 @@ var forms_1 = require("@angular/forms");
 var formSchemas_1 = require("./model/formSchemas");
 var states_1 = require("./model/states");
 var form_validator_1 = require("./form.validator");
-var NameAddressForm = (function () {
+var NameAddressForm = /** @class */ (function () {
     function NameAddressForm(builder) {
         this.states = states_1.States.withAbbreviations;
         this.builder = builder;
@@ -137,17 +137,17 @@ var NameAddressForm = (function () {
             _this.updateValidState();
         });
     };
+    NameAddressForm = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'name-address-form',
+            styleUrls: ['name-address.component.css'],
+            templateUrl: 'name-address.component.0.html',
+            changeDetection: core_1.ChangeDetectionStrategy.OnPush
+        }),
+        __metadata("design:paramtypes", [forms_1.FormBuilder])
+    ], NameAddressForm);
     return NameAddressForm;
 }());
-NameAddressForm = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'name-address-form',
-        styleUrls: ['name-address.component.css'],
-        templateUrl: 'name-address.component.0.html',
-        changeDetection: core_1.ChangeDetectionStrategy.OnPush
-    }),
-    __metadata("design:paramtypes", [forms_1.FormBuilder])
-], NameAddressForm);
 exports.NameAddressForm = NameAddressForm;
 //# sourceMappingURL=name-address.component.js.map

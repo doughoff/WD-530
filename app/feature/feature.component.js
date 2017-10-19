@@ -7,18 +7,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var FeatureComponent = (function () {
+var FeatureComponent = /** @class */ (function () {
     function FeatureComponent() {
     }
+    FeatureComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'feature',
+            templateUrl: 'feature.component.html',
+            styleUrls: ['feature.component.css']
+        })
+    ], FeatureComponent);
     return FeatureComponent;
 }());
-FeatureComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'feature',
-        templateUrl: 'feature.component.html',
-        styleUrls: ['feature.component.css']
-    })
-], FeatureComponent);
 exports.FeatureComponent = FeatureComponent;
 //# sourceMappingURL=feature.component.js.map

@@ -9,17 +9,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var inputs_component_1 = require("./inputs.component");
-var AppModule = (function () {
+var AppModule = /** @class */ (function () {
     function AppModule() {
     }
+    AppModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule],
+            declarations: [inputs_component_1.Inputs, inputs_component_1.InputChild, inputs_component_1.DogList, inputs_component_1.DogName],
+            bootstrap: [inputs_component_1.Inputs]
+        })
+    ], AppModule);
     return AppModule;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        declarations: [inputs_component_1.Inputs, inputs_component_1.InputChild, inputs_component_1.DogList, inputs_component_1.DogName],
-        bootstrap: [inputs_component_1.Inputs]
-    })
-], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map

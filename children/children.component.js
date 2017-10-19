@@ -8,46 +8,46 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 //-------------------------------------------  optional child component
-var IgnoringChild = (function () {
+var IgnoringChild = /** @class */ (function () {
     function IgnoringChild() {
     }
+    IgnoringChild = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'ignored-stuff',
+            templateUrl: 'ignoring-child.html'
+        })
+    ], IgnoringChild);
     return IgnoringChild;
 }());
-IgnoringChild = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'ignored-stuff',
-        templateUrl: 'ignoring-child.html'
-    })
-], IgnoringChild);
 exports.IgnoringChild = IgnoringChild;
 //-------------------------------------------  optional child component
-var OrganizingChild = (function () {
+var OrganizingChild = /** @class */ (function () {
     function OrganizingChild() {
     }
+    OrganizingChild = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'unorganized-stuff',
+            templateUrl: 'organizing-child.html'
+        })
+    ], OrganizingChild);
     return OrganizingChild;
 }());
-OrganizingChild = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'unorganized-stuff',
-        templateUrl: 'organizing-child.html'
-    })
-], OrganizingChild);
 exports.OrganizingChild = OrganizingChild;
 //-----------------------------------------------  root (app) component
-var Children = (function () {
+var Children = /** @class */ (function () {
     function Children() {
     }
+    Children = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'app-root',
+            styleUrls: ['children.component.css'],
+            templateUrl: "children.component.html"
+        })
+    ], Children);
     return Children;
 }());
-Children = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'app-root',
-        styleUrls: ['children.component.css'],
-        templateUrl: "children.component.html"
-    })
-], Children);
 exports.Children = Children;
 //# sourceMappingURL=children.component.js.map

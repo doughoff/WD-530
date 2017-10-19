@@ -18,17 +18,17 @@ var ROUTES = [
     { path: 'dPath', redirectTo: 'cPath' },
     { path: '**', component: routing_component_1.A }
 ];
-var AppModule = (function () {
+var AppModule = /** @class */ (function () {
     function AppModule() {
     }
+    AppModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule, router_1.RouterModule.forRoot(ROUTES, { enableTracing: true, useHash: false })],
+            declarations: [routing_component_1.Routing, routing_component_1.A, routing_component_1.B, routing_component_1.C],
+            bootstrap: [routing_component_1.Routing]
+        })
+    ], AppModule);
     return AppModule;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, router_1.RouterModule.forRoot(ROUTES, { enableTracing: true, useHash: false })],
-        declarations: [routing_component_1.Routing, routing_component_1.A, routing_component_1.B, routing_component_1.C],
-        bootstrap: [routing_component_1.Routing]
-    })
-], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map

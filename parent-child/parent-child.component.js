@@ -11,16 +11,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 //--------------------------------------  reference data class
-var Zurb = (function () {
+var Zurb = /** @class */ (function () {
     function Zurb() {
     }
+    Zurb.validStylesForCallouts = ['', 'primary', 'secondary', 'success', 'warning', 'alert'];
+    Zurb.validSizesForCallouts = ['', 'small', 'large'];
     return Zurb;
 }());
-Zurb.validStylesForCallouts = ['', 'primary', 'secondary', 'success', 'warning', 'alert'];
-Zurb.validSizesForCallouts = ['', 'small', 'large'];
 exports.Zurb = Zurb;
 //--------------------------------------  child component
-var ChildComponent = (function () {
+var ChildComponent = /** @class */ (function () {
     function ChildComponent() {
         this._styleOfCallout = '';
         this._sizeOfCallout = '';
@@ -59,18 +59,18 @@ var ChildComponent = (function () {
             Zurb.validSizesForCallouts[Math.floor(Math.random() *
                 Zurb.validSizesForCallouts.length)];
     };
+    ChildComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'child',
+            templateUrl: "child.component.html"
+        }),
+        __metadata("design:paramtypes", [])
+    ], ChildComponent);
     return ChildComponent;
 }());
-ChildComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'child',
-        templateUrl: "child.component.html"
-    }),
-    __metadata("design:paramtypes", [])
-], ChildComponent);
 exports.ChildComponent = ChildComponent;
-var ParentChildComponent = (function () {
+var ParentChildComponent = /** @class */ (function () {
     function ParentChildComponent() {
     }
     ParentChildComponent.prototype.changeStyle = function () {
@@ -82,19 +82,19 @@ var ParentChildComponent = (function () {
         var calloutChildren = this.viewChildren;
         calloutChildren.forEach(function (callout) { callout.changeSize(); });
     };
+    __decorate([
+        core_1.ViewChildren(ChildComponent),
+        __metadata("design:type", core_1.QueryList)
+    ], ParentChildComponent.prototype, "viewChildren", void 0);
+    ParentChildComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'app-root',
+            styleUrls: ["parent-child.component.css"],
+            templateUrl: "parent-child.component.html"
+        })
+    ], ParentChildComponent);
     return ParentChildComponent;
 }());
-__decorate([
-    core_1.ViewChildren(ChildComponent),
-    __metadata("design:type", core_1.QueryList)
-], ParentChildComponent.prototype, "viewChildren", void 0);
-ParentChildComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'app-root',
-        styleUrls: ["parent-child.component.css"],
-        templateUrl: "parent-child.component.html"
-    })
-], ParentChildComponent);
 exports.ParentChildComponent = ParentChildComponent;
 //# sourceMappingURL=parent-child.component.js.map

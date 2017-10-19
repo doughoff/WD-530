@@ -12,86 +12,86 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var dog_data_1 = require("./model/dog-data");
 //----------------------------------------------  optional child component
-var DogName = (function () {
+var DogName = /** @class */ (function () {
     function DogName() {
     }
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], DogName.prototype, "dogNameIn", void 0);
+    DogName = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'dog-name',
+            styles: [
+                '.dog-nameContainer {margin:.4rem; display: inline-block; text-align: right; }',
+                '.dog-breed {font-size: .7rem; }'
+            ],
+            template: "\n    <div class='dog-nameContainer'>\n        <div class='dog-name'>{{dogNameIn.name | uppercase }}</div>\n        <div class='dog-breed'>{{dogNameIn.breed}}</div>\n    </div>\n"
+        })
+    ], DogName);
     return DogName;
 }());
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], DogName.prototype, "dogNameIn", void 0);
-DogName = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'dog-name',
-        styles: [
-            '.dog-nameContainer {margin:.4rem; display: inline-block; text-align: right; }',
-            '.dog-breed {font-size: .7rem; }'
-        ],
-        template: "\n    <div class='dog-nameContainer'>\n        <div class='dog-name'>{{dogNameIn.name | uppercase }}</div>\n        <div class='dog-breed'>{{dogNameIn.breed}}</div>\n    </div>\n"
-    })
-], DogName);
 exports.DogName = DogName;
 //----------------------------------------------  optional child component
-var DogList = (function () {
+var DogList = /** @class */ (function () {
     function DogList() {
     }
+    __decorate([
+        core_1.Input('dogsToChildAgain'),
+        __metadata("design:type", Array)
+    ], DogList.prototype, "dogsFromParent", void 0);
+    DogList = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'dog-list',
+            templateUrl: 'doglist.component.html'
+        })
+    ], DogList);
     return DogList;
 }());
-__decorate([
-    core_1.Input('dogsToChildAgain'),
-    __metadata("design:type", Array)
-], DogList.prototype, "dogsFromParent", void 0);
-DogList = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'dog-list',
-        templateUrl: 'doglist.component.html'
-    })
-], DogList);
 exports.DogList = DogList;
 //----------------------------------------------  optional child component
-var InputChild = (function () {
+var InputChild = /** @class */ (function () {
     function InputChild() {
     }
+    __decorate([
+        core_1.Input('dogsToChild'),
+        __metadata("design:type", Array)
+    ], InputChild.prototype, "dogsFromParent", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], InputChild.prototype, "childVariableIn", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], InputChild.prototype, "childTextIn", void 0);
+    InputChild = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'input-child',
+            templateUrl: 'inputchild.component.html'
+        })
+    ], InputChild);
     return InputChild;
 }());
-__decorate([
-    core_1.Input('dogsToChild'),
-    __metadata("design:type", Array)
-], InputChild.prototype, "dogsFromParent", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], InputChild.prototype, "childVariableIn", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], InputChild.prototype, "childTextIn", void 0);
-InputChild = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'input-child',
-        templateUrl: 'inputchild.component.html'
-    })
-], InputChild);
 exports.InputChild = InputChild;
 //----------------------------------------------  root component
-var Inputs = (function () {
+var Inputs = /** @class */ (function () {
     function Inputs() {
         this.aNumber = 123;
         this.dogs = dog_data_1.MockDogs.SIX;
     }
+    Inputs = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'app-root',
+            templateUrl: 'inputs.component.html',
+            styleUrls: ['inputs.component.css']
+        })
+    ], Inputs);
     return Inputs;
 }());
-Inputs = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'app-root',
-        templateUrl: 'inputs.component.html',
-        styleUrls: ['inputs.component.css']
-    })
-], Inputs);
 exports.Inputs = Inputs;
 //# sourceMappingURL=inputs.component.js.map

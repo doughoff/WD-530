@@ -12,17 +12,17 @@ var platform_browser_1 = require("@angular/platform-browser");
 var form_component_1 = require("./form.component");
 var name_address_component_1 = require("./name-address.component");
 var form_validator_1 = require("./form.validator");
-var AppModule = (function () {
+var AppModule = /** @class */ (function () {
     function AppModule() {
     }
+    AppModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule, forms_1.ReactiveFormsModule],
+            declarations: [form_component_1.Form, name_address_component_1.NameAddressForm, form_validator_1.GrumpyCityValidator],
+            bootstrap: [form_component_1.Form]
+        })
+    ], AppModule);
     return AppModule;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, forms_1.ReactiveFormsModule],
-        declarations: [form_component_1.Form, name_address_component_1.NameAddressForm, form_validator_1.GrumpyCityValidator],
-        bootstrap: [form_component_1.Form]
-    })
-], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map

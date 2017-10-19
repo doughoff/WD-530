@@ -13,18 +13,18 @@ var forms_1 = require("@angular/forms");
 var wikipedia_component_1 = require("./wikipedia.component");
 var wikipedia_search_component_1 = require("./wikipedia-search.component");
 var wikipedia_service_1 = require("./wikipedia.service");
-var AppModule = (function () {
+var AppModule = /** @class */ (function () {
     function AppModule() {
     }
+    AppModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule, http_1.JsonpModule, forms_1.ReactiveFormsModule],
+            declarations: [wikipedia_component_1.Wikipedia, wikipedia_search_component_1.WikipediaSearch],
+            providers: [wikipedia_service_1.WikipediaService],
+            bootstrap: [wikipedia_component_1.Wikipedia]
+        })
+    ], AppModule);
     return AppModule;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, http_1.JsonpModule, forms_1.ReactiveFormsModule],
-        declarations: [wikipedia_component_1.Wikipedia, wikipedia_search_component_1.WikipediaSearch],
-        providers: [wikipedia_service_1.WikipediaService],
-        bootstrap: [wikipedia_component_1.Wikipedia]
-    })
-], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map

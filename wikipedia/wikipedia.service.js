@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
-var WikipediaService = (function () {
+var WikipediaService = /** @class */ (function () {
     function WikipediaService(jsonp) {
         this.jsonp = jsonp;
     }
@@ -36,11 +36,11 @@ var WikipediaService = (function () {
             return results;
         });
     };
+    WikipediaService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.Jsonp])
+    ], WikipediaService);
     return WikipediaService;
 }());
-WikipediaService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Jsonp])
-], WikipediaService);
 exports.WikipediaService = WikipediaService;
 //# sourceMappingURL=wikipedia.service.js.map

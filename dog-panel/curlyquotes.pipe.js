@@ -12,16 +12,16 @@ var core_1 = require("@angular/core");
 // declarations: [..., CurlyQuotesPipe]
 // USAGE for template
 // {{text | curlyquotes}}
-var CurlyQuotesPipe = (function () {
+var CurlyQuotesPipe = /** @class */ (function () {
     function CurlyQuotesPipe() {
     }
     CurlyQuotesPipe.prototype.transform = function (value, args) {
         return '\u201C' + value.trim() + '\u201D' + ' ' + "\uD83D\uDC15" + "\uD83D\uDC36";
     };
+    CurlyQuotesPipe = __decorate([
+        core_1.Pipe({ name: 'curlyQuotes' })
+    ], CurlyQuotesPipe);
     return CurlyQuotesPipe;
 }());
-CurlyQuotesPipe = __decorate([
-    core_1.Pipe({ name: 'curlyQuotes' })
-], CurlyQuotesPipe);
 exports.CurlyQuotesPipe = CurlyQuotesPipe;
 //# sourceMappingURL=curlyquotes.pipe.js.map

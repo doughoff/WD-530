@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var dog_data_1 = require("./model/dog-data");
-var DogPanel = (function () {
+var DogPanel = /** @class */ (function () {
     function DogPanel() {
         this.mockDogs = dog_data_1.MockDogs.SIX;
     }
@@ -19,15 +19,15 @@ var DogPanel = (function () {
         console.info('Received message', event[0], event[1]);
         this.panelStatus = message + ' of $' + paidAmount + ' for ' + dogActedOn.name;
     };
+    DogPanel = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'app-root',
+            templateUrl: 'dog-panel.component.3.html',
+            styleUrls: ['dog-panel.component.css']
+        })
+    ], DogPanel);
     return DogPanel;
 }());
-DogPanel = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'app-root',
-        templateUrl: 'dog-panel.component.3.html',
-        styleUrls: ['dog-panel.component.css']
-    })
-], DogPanel);
 exports.DogPanel = DogPanel;
 //# sourceMappingURL=dog-panel.component.js.map

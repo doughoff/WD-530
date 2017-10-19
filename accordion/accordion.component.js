@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var accordionData_1 = require("./model/accordionData");
 var accordionSection_1 = require("./model/accordionSection");
-var Accordion = Accordion_1 = (function () {
+var Accordion = /** @class */ (function () {
     function Accordion() {
         var _this = this;
         this.sections = [];
@@ -22,6 +22,7 @@ var Accordion = Accordion_1 = (function () {
         });
         console.info('constructor()');
     }
+    Accordion_1 = Accordion;
     Accordion.prototype.ngOnInit = function () {
         //console.table(this.sections);
     };
@@ -54,17 +55,17 @@ var Accordion = Accordion_1 = (function () {
     Accordion.prototype.deleteLastSection = function () {
         this.sections.pop();
     };
+    Accordion = Accordion_1 = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'app-root',
+            styleUrls: ['accordion.component.css'],
+            templateUrl: 'accordion.component.html'
+        }),
+        __metadata("design:paramtypes", [])
+    ], Accordion);
     return Accordion;
+    var Accordion_1;
 }());
-Accordion = Accordion_1 = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'app-root',
-        styleUrls: ['accordion.component.css'],
-        templateUrl: 'accordion.component.html'
-    }),
-    __metadata("design:paramtypes", [])
-], Accordion);
 exports.Accordion = Accordion;
-var Accordion_1;
 //# sourceMappingURL=accordion.component.js.map

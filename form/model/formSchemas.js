@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 // form schemas
 //-----------------------------------------------------------------
-var Address = (function () {
+var Address = /** @class */ (function () {
     function Address(street, city, state, zip) {
         this._street = street || "";
         this._city = city || "";
@@ -66,7 +66,7 @@ var Address = (function () {
 }());
 exports.Address = Address;
 //-----------------------------------------------------------------
-var Name = (function () {
+var Name = /** @class */ (function () {
     function Name(first, last) {
         this._first = first || "John";
         this._last = last || "Smith";
@@ -106,7 +106,7 @@ var Name = (function () {
 }());
 exports.Name = Name;
 //-----------------------------------------------------------------
-var Phone = (function () {
+var Phone = /** @class */ (function () {
     function Phone() {
     }
     return Phone;

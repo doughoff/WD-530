@@ -1,11 +1,11 @@
-var MarshallsGift = (function () {
+var MarshallsGift = /** @class */ (function () {
     function MarshallsGift(gift, price) {
         this.giftName = gift;
         this.price = price || 0;
     }
+    MarshallsGift.storeName = "Marshall's";
     return MarshallsGift;
 }());
-MarshallsGift.storeName = "Marshall's";
 // non-object JS syntax
 var gifts = ['umbrella', 'Italian oil', 'notebook', 'pair of pants'];
 // gifts.storeName = 'Marshall\'s'; // kinda static variable for JS

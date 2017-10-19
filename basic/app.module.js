@@ -11,17 +11,17 @@ var core_1 = require("@angular/core");
 // enableProdMode();
 var platform_browser_1 = require("@angular/platform-browser");
 var basic_component_1 = require("./basic.component");
-var AppModule = (function () {
+var AppModule = /** @class */ (function () {
     function AppModule() {
     }
+    AppModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule],
+            declarations: [basic_component_1.BasicComponent],
+            bootstrap: [basic_component_1.BasicComponent]
+        })
+    ], AppModule);
     return AppModule;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        declarations: [basic_component_1.BasicComponent],
-        bootstrap: [basic_component_1.BasicComponent]
-    })
-], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map

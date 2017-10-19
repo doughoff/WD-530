@@ -7,18 +7,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var BasicComponent = (function () {
+var BasicComponent = /** @class */ (function () {
     function BasicComponent() {
     }
+    BasicComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'app-root',
+            templateUrl: "basic.component.html",
+            styleUrls: ['basic.component.css']
+        })
+    ], BasicComponent);
     return BasicComponent;
 }());
-BasicComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'app-root',
-        templateUrl: "basic.component.html",
-        styleUrls: ['basic.component.css']
-    })
-], BasicComponent);
 exports.BasicComponent = BasicComponent;
 //# sourceMappingURL=basic.component.js.map

@@ -9,17 +9,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
 var feature_component_1 = require("./feature.component");
-var FeatureModule = (function () {
+var FeatureModule = /** @class */ (function () {
     function FeatureModule() {
     }
+    FeatureModule = __decorate([
+        core_1.NgModule({
+            imports: [common_1.CommonModule],
+            declarations: [feature_component_1.FeatureComponent],
+            exports: [feature_component_1.FeatureComponent]
+        })
+    ], FeatureModule);
     return FeatureModule;
 }());
-FeatureModule = __decorate([
-    core_1.NgModule({
-        imports: [common_1.CommonModule],
-        declarations: [feature_component_1.FeatureComponent],
-        exports: [feature_component_1.FeatureComponent]
-    })
-], FeatureModule);
 exports.FeatureModule = FeatureModule;
 //# sourceMappingURL=feature.module.js.map

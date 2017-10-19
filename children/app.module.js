@@ -11,17 +11,17 @@ var core_1 = require("@angular/core");
 // enableProdMode();
 var platform_browser_1 = require("@angular/platform-browser");
 var children_component_1 = require("./children.component");
-var AppModule = (function () {
+var AppModule = /** @class */ (function () {
     function AppModule() {
     }
+    AppModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule],
+            declarations: [children_component_1.Children, children_component_1.OrganizingChild, children_component_1.IgnoringChild],
+            bootstrap: [children_component_1.Children]
+        })
+    ], AppModule);
     return AppModule;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        declarations: [children_component_1.Children, children_component_1.OrganizingChild, children_component_1.IgnoringChild],
-        bootstrap: [children_component_1.Children]
-    })
-], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map

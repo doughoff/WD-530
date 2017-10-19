@@ -11,19 +11,19 @@ var platform_browser_1 = require("@angular/platform-browser");
 var accordion_component_1 = require("./accordion.component");
 // feature modules
 // import {FeatureModule} from './feature/feature.module';
-var AppModule = (function () {
+var AppModule = /** @class */ (function () {
     function AppModule() {
     }
+    AppModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule
+                //, FeatureModule , FormsModule, HttpModule
+            ],
+            declarations: [accordion_component_1.Accordion],
+            bootstrap: [accordion_component_1.Accordion]
+        })
+    ], AppModule);
     return AppModule;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule
-            //, FeatureModule , FormsModule, HttpModule
-        ],
-        declarations: [accordion_component_1.Accordion],
-        bootstrap: [accordion_component_1.Accordion]
-    })
-], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map
