@@ -6,7 +6,7 @@
         },
         // map tells the System loader where to look for things
         map: {
-            // our app is within the basic folder
+            // our app points to the folder we want to use - start with basic
             app: 'basic',
             // angular bundles
             '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
