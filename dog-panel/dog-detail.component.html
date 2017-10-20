@@ -1,11 +1,11 @@
 <span *ngIf ="dog.isSenior" class='warning label'>Senior</span>
     <span *ngIf ="dog.balance > 200" class='tiny alert button' (click)='payBill($event)'><i class="fa fa-dollar"></i> Pay</span> 
     <span [ngSwitch]="dog.examType">
-        <template ngSwitchWhen="checkup"><span class='label'><i class="fa fa-check"></i></span></template>
-        <template ngSwitchWhen="routine"><span class='label'><i class="fa fa-stethoscope"></i></span></template>   	
-        <template ngSwitchWhen="major"><span class='label'>Major</span></template>   	
-        <template ngSwitchWhen="complete"><span class='label'>Complete</span></template>
-        <template ngSwitchDefault></template>
+        <ng-template ngSwitchWhen="checkup"><span class='label'><i class="fa fa-check"></i></span></ng-template>
+        <ng-template ngSwitchWhen="routine"><span class='label'><i class="fa fa-stethoscope"></i></span></ng-template>   	
+        <ng-template ngSwitchWhen="major"><span class='label'>Major</span></ng-template>   	
+        <ng-template ngSwitchWhen="complete"><span class='label'>Complete</span></ng-template>
+        <ng-template ngSwitchDefault></ng-template>
     </span>
     <img src="{{dog.imageUrl}}" title="{{dog.name}}" alt="{{dog.name}}" class='float-left c-imagePlacement1'>
     <h3>{{dog.name}}</h3>
