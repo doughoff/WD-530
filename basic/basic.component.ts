@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
     templateUrl : `basic.component.html`,
     styleUrls: ['basic.component.css']
 })
-export class BasicComponent { }
+export class BasicComponent { 
+    private name: string = 'Doug';
+}
