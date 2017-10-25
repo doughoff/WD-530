@@ -1,9 +1,10 @@
 <div id='status' [ngClass]="{callout: panelStatus, alert : panelStatus}">
-    {{panelStatus}}
+	{{panelStatus}}
 </div>
 <div class='row'>
 	<div *ngFor="let dog of mockDogs; let i = index" class="success callout small-4">
-		<span class='secondary label'><span id='dogIndex'>{{i+1}}</span> of {{mockDogs.length}}</span>
-		<dog-detail [dogIn]='dog' (messageFromDetail)='onMessageFromDetail($event)' ></dog-detail>
+		<span class='secondary label'>
+			<span id='dogIndex'>{{i+1}}</span> of {{mockDogs.length}}</span>
+		<dog-detail [dogIn]='dog' (messageFromDetail)='onMessageFromDetail($event)'></dog-detail>
 	</div>
 </div>

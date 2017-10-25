@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import {Dog}                from './model/dog';
+import { Dog } from './model/dog';
 
 @Component({
     moduleId: module.id,
@@ -14,7 +14,7 @@ import {Dog}                from './model/dog';
 export class DogDetail {
     @Input('dogIn') _dog: Dog;
     @Output() messageFromDetail: EventEmitter<any> = new EventEmitter();
-    
+
     get dog() { return this._dog; }
     set dog(dogIn: Dog) {
         console.info('Updating from', this.dog);

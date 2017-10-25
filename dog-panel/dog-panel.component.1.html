@@ -1,18 +1,32 @@
 <div class='row'>
 	<div *ngFor="let dog of mockDogs; let i = index" class="success callout small-4">
-		<span class='secondary label'><span id='dogIndex'>{{i+1}}</span> of {{mockDogs.length}}</span>
+		<span class='secondary label'>
+			<span id='dogIndex'>{{i+1}}</span> of {{mockDogs.length}}</span>
 		<span *ngIf="dog.isSenior" class='warning label'>Senior</span>
-		<span *ngIf="dog.balance > 200" class='alert label'><i class="fa fa-dollar"></i></span>
+		<span *ngIf="dog.balance > 200" class='alert label'>
+			<i class="fa fa-dollar"></i>
+		</span>
 		<span [ngSwitch]="dog.examType">
-			<template ngSwitchCase="checkup"><span class='label'><i class="fa fa-check"></i></span></template>
-		<template ngSwitchCase="routine"><span class='label'><i class="fa fa-stethoscope"></i></span></template>
-		<template ngSwitchCase="major"><span class='label'>Major</span></template>
-		<template ngSwitchCase="complete"><span class='label'>Complete</span></template>
-		<template ngSwitchDefault></template>
+			<ng-template ngSwitchCase="checkup">
+				<span class='label'>
+					<i class="fa fa-check"></i>
+				</span>
+			</ng-template>
+			<ng-template ngSwitchCase="routine">
+				<span class='label'>
+					<i class="fa fa-stethoscope"></i>
+				</span>
+			</ng-template>
+			<ng-template ngSwitchCase="major">
+				<span class='label'>Major</span>
+			</ng-template>
+			<ng-template ngSwitchCase="complete">
+				<span class='label'>Complete</span>
+			</ng-template>
+			<ng-template ngSwitchDefault></ng-template>
 		</span>
 
-		<img src="{{dog.imageUrl}}" title="{{dog.name}}" alt="{{dog.name}}" 
-			class='float-left c-imagePlacement1'>
+		<img src="{{dog.imageUrl}}" title="{{dog.name}}" alt="{{dog.name}}" class='float-left c-imagePlacement1'>
 
 		<h3>{{dog.name | curlyQuotes}}</h3>
 		<p>

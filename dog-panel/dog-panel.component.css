@@ -1,14 +1,23 @@
-.c-imagePlacement1 {margin: 1em 1em 3em 0; max-height: 5em;}
-.c-imagePlacement2 {margin: .5em .5em 1.5em 0; max-height: 2.5em;}
+.c-imagePlacement1 {
+    margin: 1em 1em 3em 0;
+    max-height: 5em;
+}
+
+.c-imagePlacement2 {
+    margin: .5em .5em 1.5em 0;
+    max-height: 2.5em;
+}
+
 .ad {
-    padding: 2em; 
-    display: block; 
-    top: 0px; 
-    left: 3em; 
-    position: absolute; 
+    padding: 2em;
+    display: block;
+    top: 0px;
+    left: 3em;
+    position: absolute;
     background-color: hsla(0, 100%, 90%, .90);
 }
+
 .tiny.button {
-    margin:0;     
+    margin: 0;
     padding: .6em 1em;
 }
