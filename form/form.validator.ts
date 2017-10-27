@@ -33,7 +33,7 @@ export class ValidateCity {
         if (control.value.match(/Wichita/)) {
             errors["I don't like Wichita"] = true;
         }
-        if (control.value.match(/K.*/i)) {
+        if (control.value.match(/^K.*/i)) {
             errors["Don't start with a K"] = true;
         }
         if (control.value.length < 3) {

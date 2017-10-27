@@ -24,6 +24,7 @@ export class WikipediaService {
                         link:       request.json()[3][i]
                     });
                 }
+                console.table(results);
             }
             return results;
         } );

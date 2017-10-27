@@ -1,14 +1,15 @@
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
+// import { NgModule, enableProdMode }  from '@angular/core';
+// enableProdMode();
 
-import { Form }  from './form.component';
-import {NameAddressForm} from './name-address.component';
-import { GrumpyCityValidator} from './form.validator';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { Form } from './form.component';
+import { NameAddressForm } from './name-address.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, ReactiveFormsModule],
-  declarations: [ Form, NameAddressForm, GrumpyCityValidator ],
-  bootstrap:    [ Form ]
+  imports: [BrowserModule],
+  declarations: [Form, NameAddressForm],
+  bootstrap: [Form]
 })
 export class AppModule { }

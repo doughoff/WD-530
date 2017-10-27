@@ -14,8 +14,8 @@ var Form = /** @class */ (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'app-root',
-            styleUrls: ['form.component.css'],
-            templateUrl: "form.component.html"
+            templateUrl: "form.component.html",
+            styleUrls: ['form.component.css']
         })
     ], Form);
     return Form;

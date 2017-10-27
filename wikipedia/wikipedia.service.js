@@ -32,6 +32,7 @@ var WikipediaService = /** @class */ (function () {
                         link: request.json()[3][i]
                     });
                 }
+                console.table(results);
             }
             return results;
         });
