@@ -32,6 +32,9 @@ var WikipediaService = /** @class */ (function () {
                         link: request.json()[3][i]
                     });
                 }
+                console.info('Data was in unusable format so map was used to transpose.');
+                console.table(request["_body"]);
+                console.info('Data is in good format.');
                 console.table(results);
             }
             return results;
