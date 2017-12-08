@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var AccordionSection = /** @class */ (function () {
+var AccordionSection = (function () {
     function AccordionSection(labelIn, contentIn) {
         this._label = labelIn || 'no label';
         this._content = contentIn || 'no content';

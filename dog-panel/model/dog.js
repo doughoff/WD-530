@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Dog = /** @class */ (function () {
+var Dog = (function () {
     function Dog(balance, name, age, breed, isMale, lastOfficeVisit, imageUrl) {
         this._balance = balance;
         this._name = name;

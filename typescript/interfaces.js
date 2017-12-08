@@ -1,5 +1,5 @@
 // implement all interfaces
-var ClassWithBooleanCheck = /** @class */ (function () {
+var ClassWithBooleanCheck = (function () {
     function ClassWithBooleanCheck(result, entity) {
         this.isTrue = function () { return this.result; };
         this.isFalse = function () { return !this.result; };

@@ -24,7 +24,7 @@ export class Accordion {
     accordionClick(event: MouseEvent) {
         console.log('Clicked accordion element', event.srcElement.id, event);
         this.sections.forEach((section) => { section.hidden = true; }) // close all
-        var clickedContent = this.sections[event.srcElement.id];
+        var clickedContent = this.sections[+event.srcElement.id];
         clickedContent.hidden = !clickedContent.isHidden;
         event.preventDefault();
     }

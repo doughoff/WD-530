@@ -14,7 +14,7 @@ var forms_1 = require("@angular/forms");
 var formSchemas_1 = require("./model/formSchemas");
 var states_1 = require("./model/states");
 var form_validator_1 = require("./form.validator");
-var NameAddressForm = /** @class */ (function () {
+var NameAddressForm = (function () {
     function NameAddressForm(builder) {
         this.states = states_1.States.withAbbreviations;
         this.builder = builder;

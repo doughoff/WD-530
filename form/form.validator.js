@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var forms_1 = require("@angular/forms");
-var ValidateCity = /** @class */ (function () {
+var ValidateCity = (function () {
     function ValidateCity(_city, _state) {
         this.city = _city;
         this.state = _state;
@@ -53,7 +53,7 @@ var ValidateCity = /** @class */ (function () {
     return ValidateCity;
 }());
 exports.ValidateCity = ValidateCity;
-var Utilities = /** @class */ (function () {
+var Utilities = (function () {
     function Utilities() {
     }
     Utilities.getErrorString = function (errors) {
@@ -71,7 +71,7 @@ var Utilities = /** @class */ (function () {
     return Utilities;
 }());
 exports.Utilities = Utilities;
-var GrumpyCityValidator = /** @class */ (function () {
+var GrumpyCityValidator = (function () {
     function GrumpyCityValidator() {
     }
     GrumpyCityValidator = __decorate([
@@ -89,7 +89,7 @@ var GrumpyCityValidator = /** @class */ (function () {
     return GrumpyCityValidator;
 }());
 exports.GrumpyCityValidator = GrumpyCityValidator;
-var CityStartsWithValidator = /** @class */ (function () {
+var CityStartsWithValidator = (function () {
     function CityStartsWithValidator(aLetter) {
         this.validator = ValidateCity.startsWith(aLetter);
     }

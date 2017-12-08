@@ -1,4 +1,4 @@
-var Dog = /** @class */ (function () {
+var Dog = (function () {
     function Dog() {
     }
     Dog.prototype.bark = function () { console.log('bark'); };

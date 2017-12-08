@@ -13,7 +13,7 @@ var forms_1 = require("@angular/forms");
 var wikipedia_component_1 = require("./wikipedia.component");
 var wikipedia_search_component_1 = require("./wikipedia-search.component");
 var wikipedia_service_1 = require("./wikipedia.service");
-var AppModule = /** @class */ (function () {
+var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([

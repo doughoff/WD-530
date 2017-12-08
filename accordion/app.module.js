@@ -11,7 +11,7 @@ var platform_browser_1 = require("@angular/platform-browser");
 var accordion_component_1 = require("./accordion.component");
 // feature modules
 // import {FeatureModule} from './feature/feature.module';
-var AppModule = /** @class */ (function () {
+var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([

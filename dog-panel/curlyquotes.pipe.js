@@ -12,7 +12,7 @@ var core_1 = require("@angular/core");
 // declarations: [..., CurlyQuotesPipe]
 // USAGE for template
 // {{text | curlyquotes}}
-var CurlyQuotesPipe = /** @class */ (function () {
+var CurlyQuotesPipe = (function () {
     function CurlyQuotesPipe() {
     }
     CurlyQuotesPipe.prototype.transform = function (value, args) {

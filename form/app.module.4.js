@@ -12,7 +12,7 @@ var forms_1 = require("@angular/forms");
 var form_component_1 = require("./form.component");
 var name_address_component_1 = require("./name-address.component");
 var form_validator_1 = require("./form.validator");
-var AppModule = /** @class */ (function () {
+var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([

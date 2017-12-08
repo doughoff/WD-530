@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var accordionData_1 = require("./model/accordionData");
 var accordionSection_1 = require("./model/accordionSection");
-var Accordion = /** @class */ (function () {
+var Accordion = (function () {
     function Accordion() {
         var _this = this;
         this.sections = [];
@@ -29,7 +29,7 @@ var Accordion = /** @class */ (function () {
     Accordion.prototype.accordionClick = function (event) {
         console.log('Clicked accordion element', event.srcElement.id, event);
         this.sections.forEach(function (section) { section.hidden = true; }); // close all
-        var clickedContent = this.sections[event.srcElement.id];
+        var clickedContent = this.sections[+event.srcElement.id];
         clickedContent.hidden = !clickedContent.isHidden;
         event.preventDefault();
     };

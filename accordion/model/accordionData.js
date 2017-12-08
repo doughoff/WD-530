@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var AccordionData = /** @class */ (function () {
+var AccordionData = (function () {
     function AccordionData() {
     }
     AccordionData.FOUR = [

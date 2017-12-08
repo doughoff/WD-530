@@ -11,7 +11,7 @@ var core_1 = require("@angular/core");
 // enableProdMode();
 var platform_browser_1 = require("@angular/platform-browser");
 var children_component_1 = require("./children.component");
-var AppModule = /** @class */ (function () {
+var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([

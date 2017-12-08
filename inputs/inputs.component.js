@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var dog_data_1 = require("./model/dog-data");
 //----------------------------------------------  optional child component
-var DogName = /** @class */ (function () {
+var DogName = (function () {
     function DogName() {
     }
     __decorate([
@@ -34,7 +34,7 @@ var DogName = /** @class */ (function () {
 }());
 exports.DogName = DogName;
 //----------------------------------------------  optional child component
-var DogList = /** @class */ (function () {
+var DogList = (function () {
     function DogList() {
     }
     __decorate([
@@ -52,7 +52,7 @@ var DogList = /** @class */ (function () {
 }());
 exports.DogList = DogList;
 //----------------------------------------------  optional child component
-var InputChild = /** @class */ (function () {
+var InputChild = (function () {
     function InputChild() {
     }
     __decorate([
@@ -78,7 +78,7 @@ var InputChild = /** @class */ (function () {
 }());
 exports.InputChild = InputChild;
 //----------------------------------------------  root component
-var Inputs = /** @class */ (function () {
+var Inputs = (function () {
     function Inputs() {
         this.aNumber = 123;
         this.dogs = dog_data_1.MockDogs.SIX;

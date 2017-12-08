@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 //--------------------------------------------- child component
-var A = /** @class */ (function () {
+var A = (function () {
     function A() {
     }
     A = __decorate([
@@ -22,7 +22,7 @@ var A = /** @class */ (function () {
 }());
 exports.A = A;
 //--------------------------------------------- child component
-var B = /** @class */ (function () {
+var B = (function () {
     function B() {
     }
     B = __decorate([
@@ -36,7 +36,7 @@ var B = /** @class */ (function () {
 }());
 exports.B = B;
 //--------------------------------------------- child component
-var C = /** @class */ (function () {
+var C = (function () {
     function C() {
     }
     C = __decorate([
@@ -50,7 +50,7 @@ var C = /** @class */ (function () {
 }());
 exports.C = C;
 //--------------------------------------------- root component
-var Routing = /** @class */ (function () {
+var Routing = (function () {
     function Routing() {
     }
     Routing = __decorate([

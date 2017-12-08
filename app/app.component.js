@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var AppComponent = /** @class */ (function () {
+var AppComponent = (function () {
     function AppComponent() {
         this._src = 'http://www.funny-animalpictures.com/media/content/items/images/funnydogs0007_O.jpg';
         this._alt = 'funny dogs';
