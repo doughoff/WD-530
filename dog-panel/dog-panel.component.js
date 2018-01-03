@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var dog_data_1 = require("./model/dog-data");
-var DogPanel = (function () {
+var DogPanel = /** @class */ (function () {
     function DogPanel() {
         this.mockDogs = dog_data_1.MockDogs.SIX;
     }

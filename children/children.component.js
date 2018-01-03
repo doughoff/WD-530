@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 //-------------------------------------------  optional child component
-var IgnoringChild = (function () {
+var IgnoringChild = /** @class */ (function () {
     function IgnoringChild() {
     }
     IgnoringChild = __decorate([
@@ -22,7 +22,7 @@ var IgnoringChild = (function () {
 }());
 exports.IgnoringChild = IgnoringChild;
 //-------------------------------------------  optional child component
-var OrganizingChild = (function () {
+var OrganizingChild = /** @class */ (function () {
     function OrganizingChild() {
     }
     OrganizingChild = __decorate([
@@ -36,7 +36,7 @@ var OrganizingChild = (function () {
 }());
 exports.OrganizingChild = OrganizingChild;
 //-----------------------------------------------  root (app) component
-var Children = (function () {
+var Children = /** @class */ (function () {
     function Children() {
     }
     Children = __decorate([

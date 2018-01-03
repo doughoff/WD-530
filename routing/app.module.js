@@ -18,7 +18,7 @@ var ROUTES = [
     { path: 'dPath', redirectTo: 'cPath' },
     { path: '**', component: routing_component_1.A }
 ];
-var AppModule = (function () {
+var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([

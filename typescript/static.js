@@ -1,4 +1,4 @@
-var MarshallsGift = (function () {
+var MarshallsGift = /** @class */ (function () {
     function MarshallsGift(gift, price) {
         this.giftName = gift;
         this.price = price || 0;

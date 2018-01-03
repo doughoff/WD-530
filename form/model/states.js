@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var States = (function () {
+var States = /** @class */ (function () {
     function States() {
     }
     States.selectFromAbove = [

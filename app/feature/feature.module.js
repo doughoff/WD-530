@@ -9,7 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
 var feature_component_1 = require("./feature.component");
-var FeatureModule = (function () {
+var FeatureModule = /** @class */ (function () {
     function FeatureModule() {
     }
     FeatureModule = __decorate([

@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var dog_1 = require("./dog");
-var MockDogs = (function () {
+var MockDogs = /** @class */ (function () {
     function MockDogs() {
     }
     MockDogs.SIX = [

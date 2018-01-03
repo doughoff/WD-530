@@ -11,7 +11,7 @@ var core_1 = require("@angular/core");
 // enableProdMode();
 var platform_browser_1 = require("@angular/platform-browser");
 var basic_component_1 = require("./basic.component");
-var AppModule = (function () {
+var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([

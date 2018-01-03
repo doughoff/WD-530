@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var wikipedia_service_1 = require("./wikipedia.service");
 var forms_1 = require("@angular/forms");
-var WikipediaSearch = (function () {
+var WikipediaSearch = /** @class */ (function () {
     function WikipediaSearch(wikipediaService) {
         this.wikipediaService = wikipediaService;
         this.term = new forms_1.FormControl();

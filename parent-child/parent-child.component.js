@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 //--------------------------------------  reference data class
-var Zurb = (function () {
+var Zurb = /** @class */ (function () {
     function Zurb() {
     }
     Zurb.validStylesForCallouts = ['', 'primary', 'secondary', 'success', 'warning', 'alert'];
@@ -20,7 +20,7 @@ var Zurb = (function () {
 }());
 exports.Zurb = Zurb;
 //--------------------------------------  child component
-var ChildComponent = (function () {
+var ChildComponent = /** @class */ (function () {
     function ChildComponent() {
         this._styleOfCallout = '';
         this._sizeOfCallout = '';
@@ -70,7 +70,7 @@ var ChildComponent = (function () {
     return ChildComponent;
 }());
 exports.ChildComponent = ChildComponent;
-var ParentChildComponent = (function () {
+var ParentChildComponent = /** @class */ (function () {
     function ParentChildComponent() {
     }
     ParentChildComponent.prototype.changeStyle = function () {

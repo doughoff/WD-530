@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var dog_1 = require("./model/dog");
-var DogDetail = (function () {
+var DogDetail = /** @class */ (function () {
     function DogDetail() {
         this.messageFromDetail = new core_1.EventEmitter();
     }

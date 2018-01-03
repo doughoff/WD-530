@@ -1,6 +1,6 @@
 var Animal;
 (function (Animal) {
-    var Dog = (function () {
+    var Dog = /** @class */ (function () {
         function Dog() {
         }
         Dog.prototype.bark = function () { console.log('ns ns ns ns'); };

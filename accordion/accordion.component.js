@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var accordionData_1 = require("./model/accordionData");
 var accordionSection_1 = require("./model/accordionSection");
-var Accordion = (function () {
+var Accordion = /** @class */ (function () {
     function Accordion() {
         var _this = this;
         this.sections = [];
