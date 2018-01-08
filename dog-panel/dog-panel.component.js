@@ -30,4 +30,3 @@ var DogPanel = /** @class */ (function () {
     return DogPanel;
 }());
 exports.DogPanel = DogPanel;
-//# sourceMappingURL=dog-panel.component.js.map

@@ -8,7 +8,7 @@ export class WikipediaService {
   
     search(term: string) {
 
-    var search = new URLSearchParams()
+    var search = new URLSearchParams();
     search.set('action', 'opensearch');
     search.set('search', term);
     search.set('format', 'json');

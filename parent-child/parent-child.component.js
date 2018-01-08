@@ -97,4 +97,3 @@ var ParentChildComponent = /** @class */ (function () {
     return ParentChildComponent;
 }());
 exports.ParentChildComponent = ParentChildComponent;
-//# sourceMappingURL=parent-child.component.js.map

@@ -22,4 +22,3 @@ var FeatureModule = /** @class */ (function () {
     return FeatureModule;
 }());
 exports.FeatureModule = FeatureModule;
-//# sourceMappingURL=feature.module.js.map

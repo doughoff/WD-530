@@ -21,4 +21,3 @@ var BasicComponent = /** @class */ (function () {
     return BasicComponent;
 }());
 exports.BasicComponent = BasicComponent;
-//# sourceMappingURL=basic.component.js.map

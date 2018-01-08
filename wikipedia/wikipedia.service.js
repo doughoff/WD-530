@@ -47,4 +47,3 @@ var WikipediaService = /** @class */ (function () {
     return WikipediaService;
 }());
 exports.WikipediaService = WikipediaService;
-//# sourceMappingURL=wikipedia.service.js.map

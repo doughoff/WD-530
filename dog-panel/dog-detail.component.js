@@ -55,4 +55,3 @@ var DogDetail = /** @class */ (function () {
     return DogDetail;
 }());
 exports.DogDetail = DogDetail;
-//# sourceMappingURL=dog-detail.component.js.map

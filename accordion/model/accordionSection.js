@@ -32,4 +32,3 @@ var AccordionSection = /** @class */ (function () {
     return AccordionSection;
 }());
 exports.AccordionSection = AccordionSection;
-//# sourceMappingURL=accordionSection.js.map

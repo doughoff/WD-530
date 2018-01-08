@@ -1,4 +1,4 @@
 function getHello() {
     return 'Hello, world';
 }
-//# sourceMappingURL=helloworld2.js.map
+//# sourceMappingURL=helloWorld2.js.map

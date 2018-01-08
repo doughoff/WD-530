@@ -21,4 +21,3 @@ var FeatureComponent = /** @class */ (function () {
     return FeatureComponent;
 }());
 exports.FeatureComponent = FeatureComponent;
-//# sourceMappingURL=feature.component.js.map

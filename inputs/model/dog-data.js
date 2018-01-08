@@ -15,4 +15,3 @@ var MockDogs = /** @class */ (function () {
     return MockDogs;
 }());
 exports.MockDogs = MockDogs;
-//# sourceMappingURL=dog-data.js.map

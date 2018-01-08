@@ -83,4 +83,3 @@ var Dog = /** @class */ (function () {
 exports.Dog = Dog;
 //---------------------------------------------------------- testing
 new Dog(1, "Test Dog", 5, "test breed", true);
-//# sourceMappingURL=dog.js.map

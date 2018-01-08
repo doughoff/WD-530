@@ -1,7 +1,7 @@
 // class interface
 interface HasBooleanCheck {
     result: boolean;
-    isTrue(): boolean;
+    isTrue(),
     isFalse(): boolean;
 }
 

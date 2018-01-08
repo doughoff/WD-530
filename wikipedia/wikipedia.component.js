@@ -21,4 +21,3 @@ var Wikipedia = /** @class */ (function () {
     return Wikipedia;
 }());
 exports.Wikipedia = Wikipedia;
-//# sourceMappingURL=wikipedia.component.js.map

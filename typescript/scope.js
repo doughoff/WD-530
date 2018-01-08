@@ -1,7 +1,7 @@
 function lexical() {
     var x = 1;
     while (x < 10) {
-        var y = 100;
+        var y_1 = 100;
         x++;
     }
     console.log(x);

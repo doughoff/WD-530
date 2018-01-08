@@ -24,4 +24,3 @@ var AccordionData = /** @class */ (function () {
     return AccordionData;
 }());
 exports.AccordionData = AccordionData;
-//# sourceMappingURL=accordionData.js.map

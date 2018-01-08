@@ -68,4 +68,3 @@ var Accordion = /** @class */ (function () {
     var Accordion_1;
 }());
 exports.Accordion = Accordion;
-//# sourceMappingURL=accordion.component.js.map

@@ -36,4 +36,3 @@ var WikipediaSearch = /** @class */ (function () {
     return WikipediaSearch;
 }());
 exports.WikipediaSearch = WikipediaSearch;
-//# sourceMappingURL=wikipedia-search.component.js.map
